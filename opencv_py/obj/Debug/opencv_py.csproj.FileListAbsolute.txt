@@ -1,0 +1,9 @@
+C:\Users\sieut\source\repos\opencv_py\opencv_py\bin\Debug\opencv_py.exe.config
+C:\Users\sieut\source\repos\opencv_py\opencv_py\bin\Debug\opencv_py.exe
+C:\Users\sieut\source\repos\opencv_py\opencv_py\bin\Debug\opencv_py.pdb
+C:\Users\sieut\source\repos\opencv_py\opencv_py\obj\Debug\opencv_py.csproj.AssemblyReference.cache
+C:\Users\sieut\source\repos\opencv_py\opencv_py\obj\Debug\opencv_py.Properties.Resources.resources
+C:\Users\sieut\source\repos\opencv_py\opencv_py\obj\Debug\opencv_py.csproj.GenerateResource.cache
+C:\Users\sieut\source\repos\opencv_py\opencv_py\obj\Debug\opencv_py.csproj.CoreCompileInputs.cache
+C:\Users\sieut\source\repos\opencv_py\opencv_py\obj\Debug\opencv_py.exe
+C:\Users\sieut\source\repos\opencv_py\opencv_py\obj\Debug\opencv_py.pdb
