@@ -7,3 +7,6 @@ C:\Users\sieut\source\repos\opencv_py\opencv_py\obj\Debug\opencv_py.csproj.Gener
 C:\Users\sieut\source\repos\opencv_py\opencv_py\obj\Debug\opencv_py.csproj.CoreCompileInputs.cache
 C:\Users\sieut\source\repos\opencv_py\opencv_py\obj\Debug\opencv_py.exe
 C:\Users\sieut\source\repos\opencv_py\opencv_py\obj\Debug\opencv_py.pdb
+C:\Users\sieut\source\repos\opencv_py\opencv_py\obj\Debug\opencv_py.Form1.resources
+C:\Users\sieut\source\repos\opencv_py\opencv_py\obj\Debug\opencv_py.Loginform.resources
+C:\Users\sieut\source\repos\opencv_py\opencv_py\obj\Debug\opencv_py.Carform.resources

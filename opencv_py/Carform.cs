@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace opencv_py
 {
-    public partial class Form1 : Form
+    public partial class Carform : Form
     {
-        public Form1()
+        public Carform()
         {
             InitializeComponent();
         }

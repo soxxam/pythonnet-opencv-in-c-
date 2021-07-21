@@ -1,7 +1,7 @@
 ﻿
 namespace opencv_py
 {
-    partial class Form1
+    partial class Carform
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,19 @@ namespace opencv_py
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Carform
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Name = "Carform";
+            this.Text = "Màu xe";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-
