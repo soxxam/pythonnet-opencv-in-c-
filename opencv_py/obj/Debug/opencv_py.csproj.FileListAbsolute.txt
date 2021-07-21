@@ -10,3 +10,11 @@ C:\Users\sieut\source\repos\opencv_py\opencv_py\obj\Debug\opencv_py.pdb
 C:\Users\sieut\source\repos\opencv_py\opencv_py\obj\Debug\opencv_py.Form1.resources
 C:\Users\sieut\source\repos\opencv_py\opencv_py\obj\Debug\opencv_py.Loginform.resources
 C:\Users\sieut\source\repos\opencv_py\opencv_py\obj\Debug\opencv_py.Carform.resources
+C:\Users\sieut\source\repos\opencv_py\opencv_py\bin\Debug\Python.Runtime.dll
+C:\Users\sieut\source\repos\opencv_py\opencv_py\bin\Debug\System.Security.AccessControl.dll
+C:\Users\sieut\source\repos\opencv_py\opencv_py\bin\Debug\System.Security.Permissions.dll
+C:\Users\sieut\source\repos\opencv_py\opencv_py\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\sieut\source\repos\opencv_py\opencv_py\obj\Debug\opencv_py.csproj.CopyComplete
+C:\Users\sieut\source\repos\opencv_py\opencv_py\bin\Debug\System.Security.AccessControl.xml
+C:\Users\sieut\source\repos\opencv_py\opencv_py\bin\Debug\System.Security.Permissions.xml
+C:\Users\sieut\source\repos\opencv_py\opencv_py\bin\Debug\System.Security.Principal.Windows.xml
