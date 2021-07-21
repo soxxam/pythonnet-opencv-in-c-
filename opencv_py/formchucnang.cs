@@ -70,23 +70,22 @@ namespace opencv_py
                     cv2.imshow("hoge1", frame1);
                     cv2.imshow("hoge3", gray3);
 
-
                     int item = cv2.waitKey(20);
+
                     if (item == 113)
                     {
-                        cv2.destroyAllWindows(  );
+                        cv2.destroyAllWindows();
                         break;
-                    }
-
+                    }            
                 }
-                Console.ReadKey();
+           
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Carform carform = new Carform();
-            carform.ShowDialog();
+            carform.Show();
         }
     }
 }
