@@ -11,6 +11,7 @@ using Python.Runtime;
 using System.IO;
 using System.Reflection;
 using System.Security.Policy;
+using System.Collections;
 
 namespace opencv_py
 {
@@ -66,6 +67,11 @@ namespace opencv_py
 
         private void button2_Click(object sender, EventArgs e)
         {
+            ArrayList arrColor = new ArrayList();
+            arrColor.Add(new mau(17, 15, 100, 50, 56, 200));
+            arrColor.Add(new mau(86, 31, 4, 220, 88, 50));
+            arrColor.Add(new mau(25, 146, 190, 62, 174, 250));
+            arrColor.Add(new mau(103, 86, 65, 145, 133, 128));
             using (Py.GIL())
             {
                 dynamic cv2 = Py.Import("cv2");
@@ -73,7 +79,15 @@ namespace opencv_py
 
                 dynamic img = cv2.imread(path);
                 cv2.imshow("img", img);
-                cv2.waitKey(20);
+                foreach (mau item in arrColor)
+                {
+                    dynamic lower = np.array(new List<int> { item.g, item.b, item.r }, dtype: np.uint8);
+                    dynamic upper = np.array(new List<int> { item.gl, item.bl, item.rl }, dtype: np.uint8);
+                    dynamic mask = cv2.inRange(img, lower, upper);
+                    cv2.imshow("mask", mask);
+                    cv2.waitKey(0);
+                }
+
 
             }
         }
