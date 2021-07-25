@@ -12,6 +12,7 @@ using System.IO;
 using System.Reflection;
 using System.Security.Policy;
 using System.Collections;
+using System.Linq;
 
 namespace opencv_py
 {
@@ -44,12 +45,12 @@ namespace opencv_py
         }
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-                pictureBox4.Image = Properties.Resources.red;
-                string pathev = System.AppDomain.CurrentDomain.BaseDirectory;
-                string pat = @"bin\Debug\";
-                pathev = pathev.Replace(pat, string.Empty);
-                path = pathev + @"Resources\red.png";
-         }
+            pictureBox4.Image = Properties.Resources.red;
+            string pathev = System.AppDomain.CurrentDomain.BaseDirectory;
+            string pat = @"bin\Debug\";
+            pathev = pathev.Replace(pat, string.Empty);
+            path = pathev + @"Resources\red.png";
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -72,22 +73,49 @@ namespace opencv_py
             arrColor.Add(new mau(86, 31, 4, 220, 88, 50));
             arrColor.Add(new mau(25, 146, 190, 62, 174, 250));
             arrColor.Add(new mau(103, 86, 65, 145, 133, 128));
+            int[] light = new int[5];
+            int i = 0;
             using (Py.GIL())
             {
                 dynamic cv2 = Py.Import("cv2");
                 dynamic np = Py.Import("numpy");
 
                 dynamic img = cv2.imread(path);
-                cv2.imshow("img", img);
+
+
                 foreach (mau item in arrColor)
                 {
+                    int sum = 0;
                     dynamic lower = np.array(new List<int> { item.g, item.b, item.r }, dtype: np.uint8);
                     dynamic upper = np.array(new List<int> { item.gl, item.bl, item.rl }, dtype: np.uint8);
                     dynamic mask = cv2.inRange(img, lower, upper);
-                    cv2.imshow("mask", mask);
+
+                    dynamic output = cv2.bitwise_and(img, img, null, mask);
+                    cv2.imshow("output", output);
+
+                    dynamic size = mask.shape[0] * mask.shape[1];
+
+                    dynamic img1 = mask.reshape(size);
+                    foreach (var j in img1)
+                    {
+                        if (j > 0)
+                            sum = sum + 1;
+                    }
+                    light[i] = sum;
+                    i += 1;
+
+
+
                     cv2.waitKey(0);
                 }
-                
+                int maxValue = light.Max();
+
+                int maxIndex = light.ToList().IndexOf(maxValue);
+                string[] color = { "đỏ", "xanh lam", "vàng", "trắng" };
+                label3.Text = color[maxIndex];
+                MessageBox.Show("đã tìm thấy màu");
+
+
 
             }
         }
