@@ -87,7 +87,7 @@ namespace opencv_py
                     cv2.imshow("mask", mask);
                     cv2.waitKey(0);
                 }
-                MessageBox.Show("test thu git nay");
+                
 
             }
         }
